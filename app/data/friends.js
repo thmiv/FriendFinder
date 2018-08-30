@@ -1,6 +1,6 @@
 // array of "friends", will be exported for use by server
 
-var people = [{
+var peopleArray = [{
         "name": "Ahmed",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
         "scores": [
@@ -114,5 +114,4 @@ var people = [{
     }
 ];
 
-module.exports = people;
-
+module.exports = peopleArray;

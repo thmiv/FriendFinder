@@ -4,9 +4,7 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var tableData = require("../data/tableData");
-var waitListData = require("../data/waitinglistData");
-
+var peopleData = require("../data/peopleArray");
 
 // ===============================================================================
 // ROUTING
@@ -19,12 +17,8 @@ module.exports = function(app) {
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
 
-  app.get("/api/tables", function(req, res) {
-    res.json(tableData);
-  });
-
-  app.get("/api/waitlist", function(req, res) {
-    res.json(waitListData);
+  app.get("/api/friends", function(req, res) {
+    res.json(peopleData);
   });
 
   // API POST Requests
