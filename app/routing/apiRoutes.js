@@ -43,8 +43,55 @@ module.exports = function(app) {
 // ===============================================================================
 
 function getMatch(userData) {
-  var userScore;
-  userData.scores.forEach(function(score) {
-    
+  var scoreDifferences = [];
+  var userScores =  req.body.scores;
+  console.log('\n' + userScores + '\n');
+
+  peopleData.forEach(function(person, pIndex) {
+      var personDifference = 0;
+      var personScores = person.scores;
+
+      for (i = 0; i < personScores.length; i++) {
+          var questionDifference = parseInt(personScores[i]) - parseInt(userScores[i]);
+
+          personDifference += Math.abs(questionDifference); 
+      }
+
+      var personObject = {
+        id: pIndex,
+        score: personDifference
+      }
+
+      scoreDifferences.push(personObject);
   });
+  var sortedScores = bubbleSort(scoreDifferences);
+  console.log(sortedScores);
+  console.log("\nbest match is " + peopleData[sortedScores[0].id].name);
+  console.log(" ");
+}
+
+function bubbleSort(scoreArray) {
+  // sorted acts as a flag to let us know if our array has been completely sorted
+  var sorted = false;
+
+  while (!sorted) {
+    sorted = true;
+    // Loop through the array
+    for (var i = 0; i < scoreArray.length - 1; i++) {
+      // If the current element is larger than the next element, swap them and set sorted to `false`
+      if (scoreArray[i].score > scoreArray[i + 1].score) {
+        sorted = false;
+        var temp = scoreArray[i];
+        scoreArray[i] = scoreArray[i + 1];
+        scoreArray[i + 1] = temp;
+      }
+    }
+  }
+
+  // If we looped through the array without having to swap anything, exit the while loop and return the array
+  return scoreArray;
+
+  // scoreArray.forEach(function(item) {
+  //   console.log("item score: " + item.score);
+  // })
 }

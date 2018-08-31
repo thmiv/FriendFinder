@@ -9,7 +9,7 @@ function getMatch(userData) {
     var userScores =  ["3", "3", "3", "3", "3", "3", "3", "3", "3", "3" ];
     console.log("User: " + userScores + '\n');
 
-    peopleData.forEach(function(person) {
+    peopleData.forEach(function(person, pIndex) {
         var personDifference = 0;
         var personScores = person.scores;
         console.log(person.name +": "+ personScores);
@@ -18,24 +18,31 @@ function getMatch(userData) {
             console.log("Q"+i+" "+ questionDifference);
             personDifference += Math.abs(questionDifference); 
         }
-        scoreDifferences.push(personDifference);
+        var personObject = {
+          id: pIndex,
+          score: personDifference
+        }
+        scoreDifferences.push(personObject);
         console.log("Difference of "+ person.name +": "+ personDifference + "\n");
     });
-    console.log("Score Differences Array: " + scoreDifferences);
+    console.log(scoreDifferences);
+    // console.log("Score Differences Array: " + scoreDifferences);
     var sortedScores = bubbleSort(scoreDifferences);
-    console.log("Sorted Scores: " + sortedScores);
-    //console.log("best match is " + peopleData[0]);
+    console.log(sortedScores);
+    console.log("\nbest match is " + peopleData[sortedScores[0].id].name);
+    console.log(" ");
 }
 
 function bubbleSort(scoreArray) {
     // sorted acts as a flag to let us know if our array has been completely sorted
     var sorted = false;
+
     while (!sorted) {
       sorted = true;
       // Loop through the array
-      for (var i = 0; i < scoreArray.length; i++) {
+      for (var i = 0; i < scoreArray.length - 1; i++) {
         // If the current element is larger than the next element, swap them and set sorted to `false`
-        if (scoreArray[i] > scoreArray[i + 1]) {
+        if (scoreArray[i].score > scoreArray[i + 1].score) {
           sorted = false;
           var temp = scoreArray[i];
           scoreArray[i] = scoreArray[i + 1];
@@ -43,8 +50,13 @@ function bubbleSort(scoreArray) {
         }
       }
     }
+
     // If we looped through the array without having to swap anything, exit the while loop and return the array
     return scoreArray;
+
+    // scoreArray.forEach(function(item) {
+    //   console.log("item score: " + item.score);
+    // })
   }
 
   getMatch(userData);

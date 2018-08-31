@@ -2,7 +2,7 @@
 
 var peopleArray = [{
         "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
+        "photo": "https://picsum.photos/300/400/?random",
         "scores": [
             "5",
             "1",
@@ -18,7 +18,7 @@ var peopleArray = [{
     },
     {
         "name": "Jacob Deming",
-        "photo": "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+        "photo": "https://picsum.photos/300/400/?random",
         "scores": [
             "4",
             "2",
@@ -34,7 +34,7 @@ var peopleArray = [{
     },
     {
         "name": "Jeremiah Scanlon",
-        "photo": "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+        "photo": "https://picsum.photos/300/400/?random",
         "scores": [
             "5",
             "2",
@@ -50,7 +50,7 @@ var peopleArray = [{
     },
     {
         "name": "Louis T. Delia",
-        "photo": "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
+        "photo": "https://picsum.photos/300/400/?random",
         "scores": [
             "3",
             "3",
@@ -66,7 +66,7 @@ var peopleArray = [{
     },
     {
         "name": "Lou Ritter",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkDAAAAJDhhZTI5NTk2LWQzZjUtNDJjZi1hMTM2LTQ3ZjNmYjE0YmY2NA.jpg",
+        "photo": "https://picsum.photos/300/400/?random",
         "scores": [
             "4",
             "3",
@@ -82,7 +82,7 @@ var peopleArray = [{
     },
     {
         "name": "Jordan Biason",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAisAAAAJGUxYzc4YzA0LWQxMzUtNGI4NS04YTFiLTkwYzM0YTZkNzA2NA.jpg",
+        "photo": "https://picsum.photos/300/400/?random",
         "scores": [
             "4",
             "4",
@@ -98,7 +98,7 @@ var peopleArray = [{
     },
     {
         "name": "Margie",
-        "photo": "https://www.google.com/search?q=image+of+cute+puppy&rlz=1C1CHBF_enUS801US801&source=lnms&tbm=isch&sa=X&ved=0ahUKEwirsL7qmJHdAhUFmuAKHUHEAYMQ_AUICigB&biw=1280&bih=575#imgrc=5f2HTDEVhEXW4M:",
+        "photo": "https://picsum.photos/300/400/?random",
         "scores": [
             "4",
             "3",
