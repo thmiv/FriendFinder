@@ -32,6 +32,10 @@
       background: #eeeeee;
       border-radius: 30px;
     }
+    #match-img {
+      max-width: 500px;
+      height: auto;
+    }
   </style>
 </head>
 
@@ -273,7 +277,6 @@
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
           $("#match-img").attr("src", data.photo);
-
           // Show the modal with the best match
           $("#results-modal").modal("toggle");
 
