@@ -1,8 +1,8 @@
 // array of "friends", will be exported for use by server
 
 var peopleArray = [{
-        "name": "Ahmed",
-        "photo": "https://picsum.photos/300/400/?random",
+        "name": "Nihilanth",
+        "photo": "https://i.imgur.com/BZX5iEd.jpg",
         "scores": [
             "5",
             "1",
@@ -17,8 +17,8 @@ var peopleArray = [{
         ]
     },
     {
-        "name": "Jacob Deming",
-        "photo": "https://picsum.photos/300/400/?random",
+        "name": "Vortigaunt",
+        "photo": "https://i.imgur.com/TRI03sJ.jpg",
         "scores": [
             "4",
             "2",
@@ -33,8 +33,8 @@ var peopleArray = [{
         ]
     },
     {
-        "name": "Jeremiah Scanlon",
-        "photo": "https://picsum.photos/300/400/?random",
+        "name": "Mr. Friendly",
+        "photo": "https://i.imgur.com/qpn9FnA.jpg",
         "scores": [
             "5",
             "2",
@@ -49,8 +49,8 @@ var peopleArray = [{
         ]
     },
     {
-        "name": "Louis T. Delia",
-        "photo": "https://picsum.photos/300/400/?random",
+        "name": "Gargantua",
+        "photo": "https://i.imgur.com/HcSAebk.jpg",
         "scores": [
             "3",
             "3",
@@ -65,8 +65,8 @@ var peopleArray = [{
         ]
     },
     {
-        "name": "Lou Ritter",
-        "photo": "https://picsum.photos/300/400/?random",
+        "name": "Gonarch",
+        "photo": "https://i.imgur.com/VKB2lr7.jpg",
         "scores": [
             "4",
             "3",
@@ -81,8 +81,8 @@ var peopleArray = [{
         ]
     },
     {
-        "name": "Jordan Biason",
-        "photo": "https://picsum.photos/300/400/?random",
+        "name": "Alien Grunt",
+        "photo": "https://i.imgur.com/tkoP7gu.jpg",
         "scores": [
             "4",
             "4",
@@ -97,8 +97,8 @@ var peopleArray = [{
         ]
     },
     {
-        "name": "Margie",
-        "photo": "https://picsum.photos/300/400/?random",
+        "name": "Headcrab",
+        "photo": "https://i.imgur.com/cYQOxgp.jpg",
         "scores": [
             "4",
             "3",

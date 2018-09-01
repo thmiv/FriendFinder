@@ -12,8 +12,26 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-  <!-- Custom -->
-  <link rel="stylesheet" type="text/css" href="./mystyle.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background: url('https://i.imgur.com/8Kg1D6Q.jpg');
+    }
+    .btn {
+      background: #fe6007;
+      border-color: #fe6007;
+    }
+    #api-link {
+      background: #eeeeee;
+      padding: 3px;
+      border-radius: 2px;
+      color: #83829b;
+    }
+    #survey-container {
+      background: #eeeeee;
+      border-radius: 30px;
+    }
+  </style>
 </head>
 
 <body>
@@ -21,22 +39,24 @@
   <div class="container">
 
     <div class="jumbotron">
-      <h1> <i class="fas fa-user-friends"></i> Friend Finder</h1>
+      <img class="img-fluid" src="https://svgshare.com/i/88p.svg" height="100px" style="float:right">
+      <h1> <i class="fas fa-pastafarianism"></i> Monster Matcher </h1>
       <hr>
-      <h2>Answer a few basic questions. </h2>
-      <h2>Then find the friend with the greatest compatibility!</h2>
+      <h2>Answer a few basic questions.</h2>
+      <h2>Then find a Xen Alien with the highest compatibility!</h2>
       <br>
 
       <div>
-        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span>
-              Go to Survey</h4></button></a>
+        <a href="/survey"><button type="button" class="btn btn-lg btn-primary">
+            <h4> <span class="glyphicon glyphicon-list-alt"></span>
+              Take Survey </h4></button></a>
       </div>
 
     </div>
 
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a></p>
+        <p> <i class="far fa-lambda"></i> <a id="api-link" href="/api/friends">API Friends List</a></p>
       </div>
     </footer>
 
